@@ -23,6 +23,9 @@ namespace Inheritance
         public bool CanGrowTail { get; set; }
 
 
-
+        public void Print()
+        {
+            Console.WriteLine($"{IsColdBlooded}, {HasScales}, {Habitat}, {CanGrowTail}");
+        }
     }
 }

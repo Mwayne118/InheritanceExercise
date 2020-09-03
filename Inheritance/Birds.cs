@@ -20,7 +20,7 @@ namespace Inheritance
         public bool WillMigrate { get; set; }
         public double Beak { get; set; }
 
-
+        
 
     }
 }
