@@ -4,36 +4,35 @@ namespace Inheritance
 {
     class Program
     {
+        public static bool IsColdBlooded { get; private set; }
+        public static bool HasScales { get; private set; }
+        public static string Habitat { get; private set; }
+        public static bool CanGrowTail { get; private set; }
+
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            Birds myBird = new Birds();
+            myBird.WingColor = "blue";
+            myBird.CanFly = true;
+            myBird.WillMigrate = true;
+            myBird.Beak = 6.4;
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
+            Reptile myReptile = new Reptile();
+            {
+                IsColdBlooded = true;
+                HasScales = true;
+                Habitat = "swamp";
+                CanGrowTail = true;
 
 
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+            };
+
+
+
+  
+             
         }
     }
 }
